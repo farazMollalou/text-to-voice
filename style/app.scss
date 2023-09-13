@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(15deg, #00134f, #22a6f8, #00134f);
+    @include flex();
+    gap: 40px;
+    flex-direction: column;
+
+    h1 {
+        font-size: 80px;
+        font-family: cursive;
+        color: #ffee00;
+
+        span {
+            color: #fff
+        }
+    }
+    .wrapper {
+        @include flex();
+        width: 700px;
+        gap: 30px;
+
+        textarea {
+            flex: 1;
+            border: none;
+            border-radius: 10px;
+            padding: 14px;
+            font-size: 22px;
+            outline: none;
+            background-color: #b9daff;
+            
+            &::placeholder {
+                font-size: 15px;
+            }
+        }
+        
+        .side-box {
+            @include flex();
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 15px;
+            width: 300px;
+            height: 240px;
+            
+            .play-btn {
+                width: 70%;
+                border-radius: 7px;
+                border: none;
+                height: 36px;
+                background-color: #d7009d;
+                color: #fff;
+                font-size: 22px;
+                font-weight: 700;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding: 4px 0;
+                cursor: pointer;
+            }
+            select {
+                width: 100%;
+                border: none;
+                border-radius: 6px;
+                height: 35px;
+                @include flex();
+                padding: 5px;
+                font-weight: 600;
+            }
+            .clear-btn {
+                @extend .play-btn;
+                background-color: #9d0000;
+                height: 45px;
+                font-size: 20px;
+                padding: 6px 0;
+                margin-top: 30px;
+            }
+        }
+    }
+}

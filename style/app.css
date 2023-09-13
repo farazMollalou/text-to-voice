@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(15deg, #00134f, #22a6f8, #00134f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-direction: column;
+}
+body h1 {
+  font-size: 80px;
+  font-family: cursive;
+  color: #ffee00;
+}
+body h1 span {
+  color: #fff;
+}
+body .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  gap: 30px;
+}
+body .wrapper textarea {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 22px;
+  outline: none;
+  background-color: #b9daff;
+}
+body .wrapper textarea::placeholder {
+  font-size: 15px;
+}
+body .wrapper .side-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  height: 240px;
+}
+body .wrapper .side-box .play-btn, body .wrapper .side-box .clear-btn {
+  width: 70%;
+  border-radius: 7px;
+  border: none;
+  height: 36px;
+  background-color: #d7009d;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 4px 0;
+  cursor: pointer;
+}
+body .wrapper .side-box select {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-weight: 600;
+}
+body .wrapper .side-box .clear-btn {
+  background-color: #9d0000;
+  height: 45px;
+  font-size: 20px;
+  padding: 6px 0;
+  margin-top: 30px;
+}/*# sourceMappingURL=app.css.map */
